@@ -40,6 +40,16 @@ class _HomePageState extends State<HomePage> {
             _itemList(img: "assets/images/per4.jpg",name: "Mark",time: "10:12",msg: "It totally makes sense to get."),
           ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home),title: Text("Home"),backgroundColor: Colors.red),
+          BottomNavigationBarItem(icon: Icon(Icons.message),title: Text("Messages"),backgroundColor: Colors.red),
+          BottomNavigationBarItem(icon: Icon(Icons.video_library),title: Text("Videos"),backgroundColor: Colors.red),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications),title: Text("Notifications"),backgroundColor: Colors.red),
+
+        ],
+        selectedItemColor: Colors.pink,
+      ),
 
     );
   }
